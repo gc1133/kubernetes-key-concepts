@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-configmap
+  namespace: default
+data:
+  # DATABASE_URL: "http://testdb:3306"
+  # DATABASE_PASSWORD: "Password"
+  database.properties: |
+    database.url=http://testdb:3306
+    database.password=Password@1234
